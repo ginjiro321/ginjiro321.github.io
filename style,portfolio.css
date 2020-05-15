@@ -1,0 +1,266 @@
+
+body{ 
+  padding: 0;
+  margin: 0 auto;
+  display:block;
+  box-sizing: border-box;
+  font-family:'Poppins',sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin:0 auto;
+  color: grey;
+}
+
+/*************header***************/
+header{
+background-image: url("file:///Users/misawaginjiro/Pictures/Photos%20Library.photoslibrary/private/com.apple.Photos/ExternalEditSessions/FA8BB2BB-D94C-4FAC-BF39-938CC58FA752/IMG_1549.jpeg");
+ background-size:cover;
+ height:450px;
+}
+
+.logo{
+  display: flex;
+  justify-content: start;
+}
+
+.h-logo{
+  border-bottom:2px solid black ;
+  width:40%;
+  margin: 30px;
+  text-align: center;
+}
+
+.h-logo h1 a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu{
+  display: flex;
+  padding: 10px;
+}
+
+.nav{
+  width: 100%;
+
+}
+
+.h-nav{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.h-nav li{
+  list-style: none;
+ 
+}
+
+.h-nav li a{
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 30px;
+  color:#fff;
+  transition:0.5s;
+  background:linear-gradient(to right,#FFE29F,#FFA99F,#FFE29f);
+  background-size:200%;
+}
+
+.h-nav li a:hover{
+  background-position-X:100% ;
+  transform:translateY(-15px);
+}
+
+.h-nav li a:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:50%;
+  height:100%;
+  background:rgba(255,255,255,.2)
+}
+.h-nav li a:before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  width:90%;
+  height:4px;
+  background:rgba(0,0,0,.2);
+  border-radius: 50%;
+  transform: scale(0);
+  /* filter:blur(5px); */
+  transition: 0.5s;
+  z-index:-1;
+}
+.h-nav li a:hover:before{
+  transform: scale(1);
+  bottom: -15px;
+}
+
+/*************about***************/
+#About{
+  background-color:#FFE29F;
+  padding:20px;
+  margin:20px auto;
+}
+
+/***********************/
+
+.title{
+  padding:5px 30px;
+  border-left:8px solid white;
+  border-bottom:1px solid white;
+  color: #333;
+  font-size: bold;
+  letter-spacing: 2px;
+}
+
+.subtitle{
+  width:90%;
+  padding:15px;
+  margin:5px;
+  font-size:30px;
+  color:white;
+  border:1px solid grey;
+  box-shadow:1px 1px 2px black;
+}
+
+
+
+/***********************/
+
+
+.A-img{
+  width:100%;
+  padding:30px 15px;
+  border-radius: 50%;
+}
+
+.A-p{
+  width:90%;
+  text-align:left;
+  margin-left:10px;
+}
+
+.A-content{
+  padding:5px;
+  margin-top:10px;
+}
+
+/*************skill***************/
+#Skill{
+  background-color:#FFA99F;
+  padding:20px;
+  margin:20px auto;
+}
+
+.S-t{
+  text-align: center;
+}
+
+.S-p{
+  padding:30px;
+  text-align: center;
+}
+
+.S-p img{
+  width:70%;
+ 
+}
+
+/*************works***************/
+
+#Works{
+  background-color: #FFE29F;
+  padding:20px;
+  margin:20px auto;
+}
+
+.W-img{
+  position: relative;
+  text-align: center;
+  display: block;
+ margin-top:10px;
+}
+
+.W-img img{
+  object-fit: cover;
+  width:90%;
+  height:260px;
+  border:5px solid black;
+  box-shadow:6px 6px 3px 3px #333;
+}
+
+.W-img img:hover{
+  box-shadow:0 0 0  gray;
+  transition: .5s;
+}
+
+.W-p{
+  text-align: center;
+  margin-top:20px;
+}
+
+h4{
+  border-bottom: 1px solid grey;
+}
+/*************contact***************/
+
+#Contact{
+  background-color: #FFA99F;
+  padding:20px;
+  margin:20px auto;
+}
+
+.name,.mail,.form-content{
+  padding: 15px;
+}
+
+.label{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+input{
+  width:100%;
+}
+
+textarea{
+  width: 100%;
+}
+
+.btn{
+  display: flex;
+  width: 100%;
+  vertical-align: center;
+}
+
+button{
+  color: white;
+  background-color: rgba(49, 46, 46, 0.8);
+  border:1px solid #333;
+  border-radius: 50%;
+  padding:10px 30px;
+}
+
+
+/*************footer***************/
+
+footer{
+  border-top: 2px solid grey;
+  min-height: 80px;
+  text-align: center;
+  color: gray;
+}
